@@ -2,14 +2,15 @@ public abstract class Hero {
     final int max = 100;
     final int min = 50;
 
-    private int hitPoints = (int) (Math.random() * ((max - min) + 1)) + min;
+    private int hitPoints;
     //private float attack = (int) (Math.random() * )
     private float defense;
 
-
-
-
-
+    public Hero() {
+        this.hitPoints = (int) (Math.random() * ((max - min) + 1)) + min;
+        this.defense = 0.0f;
+        //this.attack = 0.0f
+    }
 
     public abstract int getHitPoints();
     public abstract float getAttack();

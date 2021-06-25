@@ -4,25 +4,19 @@ public class Wizard extends Hero {
     private float defense;
 
 
-
-
-
-
-
-
     @Override
     public int getHitPoints() {
-        return 0;
+        return this.hitPoints;
     }
 
     @Override
     public float getAttack() {
-        return 0;
+        return this.attack;
     }
 
     @Override
     public float getDefense() {
-        return 0;
+        return this.defense;
     }
 
     @Override
@@ -32,6 +26,5 @@ public class Wizard extends Hero {
 
     @Override
     public void takeDamage(float modifier) {
-
     }
 }
