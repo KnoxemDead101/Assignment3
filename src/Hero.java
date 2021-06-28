@@ -22,5 +22,7 @@ public abstract class Hero {
     public abstract int doAttack(float modifier);
     public abstract void takeDamage(float modifier);
     public abstract float generate_attack(float min, float max);
+
+    //Generates the stats for each hero object
     public abstract void hero_stats();
 }
